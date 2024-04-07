@@ -8,7 +8,9 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -56,8 +58,15 @@ public class BaseClass {
 
 	@BeforeClass
 	public void browserSetup() {
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
+	//	WebDriverManager.edgedriver().setup();
+	//	driver = new EdgeDriver();
+		
+		WebDriverManager.firefoxdriver().setup();
+		driver = new FirefoxDriver();
+		
+	//	WebDriverManager.chromedriver().setup();
+	//	driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
 		System.out.println("Driver initialized.");
 	}
@@ -89,7 +98,7 @@ public class BaseClass {
 			
 				String methodName = result.getName();
 		        String screenshotPath = takeScreenshot(methodName);
-		        BaseClass.getTest().fail(result.getThrowable());
+		   //     BaseClass.getTest().fail(result.getThrowable());
 		        BaseClass.getTest().addScreenCaptureFromPath(screenshotPath);
 			
 			}

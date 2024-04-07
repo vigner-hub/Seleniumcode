@@ -5,12 +5,15 @@
         <parameter name="postalCode" value="517590" />
         <parameter name="Firstname" value="vignesh"/>
         <parameter name="Lastname" value="R"/>
+        <parameter name="username" value="Admin"/>
+        <parameter name="password" value="admin123"/>
         
         <classes>
             <class name="selenium.Practice" />
             <class name="selenium.CustomListner" />
             <class name="selenium.BaseClass"/>
-            <class name="selenium.TestNgPractice"></class>
+            <class name="selenium.TestNgPractice">
+            <class name="selenium.OrangeHrm"></class>
         </classes>
     </test>
 </suite>
