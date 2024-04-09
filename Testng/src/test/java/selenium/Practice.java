@@ -27,16 +27,11 @@ public class Practice extends BaseClass {
 	@Test(priority = 2)
 	public void addToCart() {
 
-		test = extent.createTest("addToCart");
 
-		test.info("added products to cart");
-		driver.findElement(By.id("add-to-cart-sauce-labs-backpk")).click();
-		driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt"))
-				.click();
+		driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+		driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt")).click();
 		driver.findElement(By.className("shopping_cart_link")).click();
-		test.fail("testcase failed");
-
-	}
+			}
 
 	@Test(priority = 3)
 	public void removeItems() {
@@ -46,8 +41,7 @@ public class Practice extends BaseClass {
 
 	@Test(priority = 4)
 	@Parameters({"postalCode", "Firstname", "Lastname"})
-	public void shippingInformation(String postalCode, String Firstname,
-			String Lastname) {
+	public void shippingInformation(String postalCode, String Firstname,String Lastname) {
 		driver.findElement(By.id("first-name")).sendKeys(Firstname);
 		driver.findElement(By.id("last-name")).sendKeys(Lastname);
 		driver.findElement(By.id("postal-code")).sendKeys(postalCode);
