@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.Dummy">
+      <class name="hyrTestng.TestngBasicPractice">
         <methods>
-          <include name="launch"/>
+          <include name="datadriven" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- selenium.Dummy -->
+      </class> <!-- hyrTestng.TestngBasicPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [jhdskhdk]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Tessndmsdnt(failed)">
+    <classes>
+      <class name="selenium.Practice">
+        <methods>
+          <include name="addToCart"/>
+          <include name="shippingInformation"/>
+          <include name="browserSetup"/>
+          <include name="quit"/>
+          <include name="extentReportSetUp"/>
+          <include name="checkStart"/>
+          <include name="extentReportTearDown"/>
+          <include name="removeItems"/>
+          <include name="checkEnd"/>
+        </methods>
+      </class> <!-- selenium.Practice -->
+    </classes>
+  </test> <!-- Tessndmsdnt(failed) -->
+</suite> <!-- Failed suite [jhdskhdk] -->
